@@ -1,9 +1,35 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: white;
 }
+
 body {
-  background-image: url("../img/back.jpg");
-  background-size: cover;
+   background-image: url("../img/back.jpg");
+   background-size: cover;
+}
+
+#container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#container_top {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.top_left {
+   width: 100px;
+}
+.top_right {
+   width: 100px;
+}
+#container_bottom {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
 }
