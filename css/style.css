@@ -10,26 +10,57 @@ body {
    background-size: cover;
 }
 
-#container {
+#container, #container_top, #container_bottom {
    display: flex;
-   flex-direction: column;
    align-items: center;
 }
 
+#container {
+   flex-direction: column;
+   height: 100vh;
+   justify-content: space-between;
+}
+
 #container_top {
-   display: flex;
    justify-content: space-between;
    width: 100%;
 }
 
-.top_left {
+.top_left, .top_right {
    width: 100px;
 }
-.top_right {
-   width: 100px;
+
+#container_main_box { 
+   display: flex;
+   flex-direction: column;
+   gap: 10px; 
 }
+
+#container_main {
+
+   text-align: center;
+}
+
+#container_goal {
+   text-align: center;
+}
+
 #container_bottom {
    display: flex;
    justify-content: space-between;
    width: 100%;
+}
+
+input {
+   border: none; 
+   border-bottom: 2px solid white; 
+   background-color: transparent;
+   color: white; 
+   padding: 5px;
+   width: 200px; 
+   text-align: center;
+}
+
+input:focus {
+   outline: none;
 }
