@@ -5,31 +5,57 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Document</title>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <link rel="stylesheet" href="css/style.css" />
       <script src="js/main.js"></script>
+      <link rel="stylesheet" href="css/style.css" />
    </head>
    <body>
       <div id="container">
          <div id="container_top">
             <div class="top_left">
-               <div class="go_link"></div>
-               <div class="focus_mode"></div>
+               <div class="news">
+                  <img src="img/news.png" alt="" />
+                  <p>news</p>
+               </div>
+               <div class="go_link">
+                  <img src="img/link.png" alt="" />
+                  <p>link</p>
+               </div>
             </div>
-            <div class="top_middle_day">현재 날짜</div>
+            <div>
+               <img src="img/cat.gif" class="cute_gif" />
+               <span class="top_middle_day">현재 날짜</span>
+            </div>
+
             <div class="top_right">
                <div class="focus_stats"></div>
-               <div class="weather"></div>
+               <div class="weather">
+                  <div style="display: none">
+                     <a
+                        target="_blank"
+                        href="https://icons8.com/icon/eeqkjTGtABCj/cat"
+                        >고양이</a
+                     >
+                     작가:
+                     <a target="_blank" href="https://icons8.com">Icons8</a>
+                  </div>
+
+                  <img src="img/weather_default.png" alt="" />
+                  <div>
+                     <div class="weather_temp">날씨</div>
+                     <div class="weather_name">지역</div>
+                  </div>
+               </div>
             </div>
          </div>
          <div id="container_main_box">
             <div id="container_main">
                <div class="main_clock">
-                  <h1>00 : 00</h1>
+                  <h1>00:00</h1>
                   <div class="clock_change"></div>
                </div>
                <div class="main_say">
-                  <span>good morning</span>
-                  <span><input type="text"></span>
+                  <span>Good morning,</span>
+                  <span><input type="text" /></span>
                </div>
             </div>
             <div id="container_goal">
@@ -50,8 +76,8 @@
             </div>
             <div class="bottom_right">
                <div class="miniTodo">
+                  <img src="img/todo.png" alt="" class="todo_icon" />
                   <p>Todos</p>
-                  <div class="todo_icon"></div>
                </div>
             </div>
          </div>
